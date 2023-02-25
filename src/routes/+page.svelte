@@ -14,7 +14,7 @@
 <pre><code>pnpm i -D srit</code></pre>
 
 <h2>Usage</h2>
-<p>The above image is created by the following:</p>
+<p>The above image is created by the following in a Svelte file:</p>
 
 <pre><code>&lt;script lang=&quot;ts&quot;&gt;
   import Srit from 'srit';
