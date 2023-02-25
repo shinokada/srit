@@ -4,6 +4,8 @@
   export let webp: boolean = true
   export let sizes = [100, 200, 400, 800]
   export let alt = ''
+  export let loading: "lazy" | "eager" | null | undefined = 'lazy'
+  export let decoding : "async" | "auto" | "sync" | null | undefined = 'async'
   let imgStyle:string
   const maxWidth = Math.max.apply(null, sizes);
   function createImageSrcSet(src: string, sizes: number[], format: string = ''): string {
@@ -55,20 +57,22 @@ getAspectRatioFromSrc(src)
   {#if avif}
   <source
     type="image/avif"
-    srcset="{avifSrcSet}" />
+    srcset="{avifSrcSet}" 
+  >
   {/if}
   {#if webp}
   <source
     type="image/webp"
-    srcset="{webpSrcSet}" />
+    srcset="{webpSrcSet}" 
+  >
   {/if}
   <img
     {src}
     {srcset}
     sizes="(max-width: {maxWidth}px) 100vw, 50vw"
     style="{imgStyle}"
-    loading="lazy"
-    decoding="async"
+    {loading}
+    {decoding}
     {alt}
   />
 </picture>

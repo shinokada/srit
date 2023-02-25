@@ -1,6 +1,8 @@
 <script>
-  import {ImageTag} from "$lib";
+  import { Srit } from "$lib";
+  const imageSrc = 'images/test-image-2.jpg';
+  const imageSizes = [100, 200, 400, 800];
+  const imageAlt = 'Test Image';
 </script>
 
-
-<ImageTag  alt="my town" sizes={[100, 200, 400, 800]} src='images/test-image-2.jpg'/>
+<Srit src={imageSrc} sizes={imageSizes} alt={imageAlt} />

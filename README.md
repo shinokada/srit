@@ -1,58 +1,66 @@
-# create-svelte
+# Svelte Responsive Image Tag (SRIT)
 
-Everything you need to build a Svelte library, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Svelte Responsive Image Tag (SRIT) is a Svelte component that makes it easy to create responsive images with automatic format selection based on browser support. The component uses the picture element to provide multiple sources for the image in different formats, and the img element with the srcset and sizes attributes to select the appropriate source based on the device's screen size and resolution.
 
-Read more about creating a library [in the docs](https://kit.svelte.dev/docs/packaging).
+## Installation
 
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
+```sh
+pnpm i -D srit
 ```
 
-## Developing
+# Usage
+To use the Srit component, import it in your Svelte file and pass the required and optional props:
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+```html
+<script lang="ts">
+  import Srit from 'srit';
 
-```bash
-npm run dev
+  const imageSrc = 'images/test-image.jpg';
+  const imageSizes = [100, 200, 400, 800];
+  const imageAlt = 'Test Image';
+</script>
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+<Srit src={imageSrc} sizes={imageSizes} alt={imageAlt} />
 ```
 
-Everything inside `src/lib` is part of your library, everything inside `src/routes` can be used as a showcase or preview app.
+The above code creates the following output:
 
-## Building
-
-To build your library:
-
-```bash
-npm run package
+```html
+<picture>
+  <source 
+  type="image/avif" 
+  srcset="images/test-image-2-100.avif?width=100 100w, images/test-image-2-200.avif?width=200 200w, images/test-image-2-400.avif?width=400 400w, images/test-image-2-800.avif?width=800 800w">
+  <source 
+  type="image/webp" 
+  srcset="images/test-image-2-100.webp?width=100 100w, images/test-image-2-200.webp?width=200 200w, images/test-image-2-400.webp?width=400 400w, images/test-image-2-800.webp?width=800 800w">
+  <img 
+  src="images/test-image-2.jpg" 
+  srcset="images/test-image-2-100.jpg?width=100 100w, images/test-image-2-200.jpg?width=200 200w, images/test-image-2-400.jpg?width=400 400w, images/test-image-2-800.jpg?width=800 800w" 
+  sizes="(max-width: 800px) 100vw, 50vw" 
+  loading="lazy" 
+  decoding="async" 
+  alt="Test Image">
+</picture>
 ```
 
-To create a production version of your showcase app:
+## Props
 
-```bash
-npm run build
-```
+The following props are available for the SRIT component:
 
-You can preview the production build with `npm run preview`.
+src: A required prop that specifies the URL of the image to display.
+avif: An optional prop that specifies whether to include an avif source in the picture element. Default is true.
+webp: An optional prop that specifies whether to include a webp source in the picture element. Default is true.
+sizes: An optional prop that specifies an array of image sizes to include in the srcset attribute of the img element. Default is [100, 200, 400, 800].
+alt: An optional prop that specifies the alternative text for the image.
+loading: A string indicating whether the image should be lazily loaded. Can be "lazy", "eager", null, or undefined. Defaults to "lazy".
+decoding: A string indicating the decoding mode for the image. Can be "async", "auto", "sync", null, or undefined. Defaults to "async".
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+## How to generate all images
 
-## Publishing
+Use [bimgc](https://bimgc.codewithshin.com/). `bimgc` converts PNG and JPG images to AVIF and WebP format with various sizes and saves them in a specified output directory. The output images are named based on the input file and include information about their size and format.
 
-Go into the `package.json` and give your package the desired name through the `"name"` option. Also consider adding a `"license"` field and point it to a `LICENSE` file which you can create from a template (one popular option is the [MIT license](https://opensource.org/license/mit/)).
+## How it Works
 
-To publish your library to [npm](https://www.npmjs.com):
+The Srit component uses the picture element with the source elements to provide multiple sources for the image in different formats. The img element with the srcset and sizes attributes is used to select the appropriate source based on the device's screen size and resolution.
 
-```bash
-npm publish
-```
+By default, the Srit component includes both avif and webp sources in the picture element, and the appropriate source is selected based on the browser's support for these formats. The component also includes the loading="lazy" and decoding="async" attributes to improve performance by deferring the loading and decoding of the image until it is needed.
