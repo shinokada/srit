@@ -122,7 +122,6 @@
 <pre><code>npm i -g bimgc
 bimgc --version
 bimgc --help
-cd path/to/your/project
 </code></pre>
 
 <h2>bimgc configuration file</h2>
@@ -131,7 +130,7 @@ cd path/to/your/project
 
 <pre><code>module.exports = &#123;
   inputDir: &quot;static/images&quot;,
-  outputDir: &quot;static/images/output&quot;,
+  outputDir: &quot;static/images&quot;,
   sizes: [100, 200, 400, 800],
   formats: ['avif', 'webp'],
   imageFiles: ['example-1.jpg', 'example-2.png']
