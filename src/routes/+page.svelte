@@ -5,4 +5,6 @@
   const imageAlt = 'Test Image';
 </script>
 
+<h1>Srit: Svelte Responsive Image Tag</h1>
+
 <Srit src={imageSrc} sizes={imageSizes} alt={imageAlt} />
