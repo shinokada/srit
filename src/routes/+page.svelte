@@ -56,6 +56,43 @@
 &lt;/picture&gt;
 </code></pre>
 
+<h2>Bimgc to create all your images from one image</h2>
+
+<p>
+  You can convert your image to all AVIF and WEBP images by using <a href="https://bimgc.codewithshin.com/?id=package-usage">bimgc</a>. 
+</p>
+
+<h2>Installing bimgc</h2>
+
+<pre><code>npm i -g bimgc
+bimgc --version
+bimgc --help
+cd path/to/your/project
+</code></pre>
+
+<h2>bimgc configuration file</h2>
+
+<p>Create a configuration file, bimgc.config.cjs in the project root directory:</p>
+
+<pre><code>module.exports = &#123;
+  inputDir: &quot;static/images&quot;,
+  outputDir: &quot;static/images/output&quot;,
+  sizes: [100, 200, 400, 800],
+  formats: ['avif', 'webp'],
+  imageFiles: ['example-1.jpg', 'example-2.png']
+&#125;;</code></pre>
+
+<p>Add the following to the scripts section of your package.json file:</p>
+
+<pre><code>&quot;scripts&quot;: &#123;
+  &quot;gen:images&quot;: &quot;bimgc -c bimgc.config.cjs&quot;
+&#125;</code></pre>
+
+<p>To generate the images, run the following command:</p>
+
+<pre><code>npm run gen:images</code></pre>
+
+<p>Find more information about <a href="https://bimgc.codewithshin.com/?id=package-usage">bimgc</a>.</p>
 </main>
 
 <style>
