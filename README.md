@@ -55,8 +55,8 @@ The following props are available for the Srit component:
 |avif| An optional prop that specifies whether to include an avif source in the picture element.|true|
 |webp| An optional prop that specifies whether to include a webp source in the picture element.|true|
 |sizes| An optional prop that specifies an array of image sizes to include in the srcset attribute of the img element. |[100, 200, 400, 800]|
-|alt| An optional prop that specifies the alternative text for the image.
-loading: A string indicating whether the image should be lazily loaded. Can be "lazy", "eager", null, or undefined. |lazy|
+|alt| An optional prop that specifies the alternative text for the image.| |
+|loading| A string indicating whether the image should be lazily loaded. Can be "lazy", "eager", null, or undefined. |lazy|
 |decoding| A string indicating the decoding mode for the image. Can be "async", "auto", "sync", null, or undefined. |async|
 
 ## How to generate all images
