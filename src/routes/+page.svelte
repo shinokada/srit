@@ -9,6 +9,10 @@
 
 <Srit src={imageSrc} sizes={imageSizes} alt={imageAlt} />
 
+<h2>Introduction</h2>
+
+<p>Svelte Responsive Image Tag (SRIT) is a Svelte component that simplifies the creation of responsive images by automatically selecting the appropriate format based on the browser's capabilities. The component uses the "picture" element to provide multiple image sources in different formats and the "img" element with the "srcset" and "sizes" attributes to choose the optimal source based on the device's screen size and resolution.</p>
+
 <h2>Installation</h2>
 
 <pre><code>pnpm i -D srit</code></pre>
@@ -56,6 +60,57 @@
 &lt;/picture&gt;
 </code></pre>
 
+<h2>Props</h2>
+
+<p>The following props are available for the Srit component:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>src</td>
+      <td>A required prop that specifies the URL of the image to display.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>avif</td>
+      <td>An optional prop that specifies whether to include an avif source in the picture element.</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td>webp</td>
+      <td>An optional prop that specifies whether to include a webp source in the picture element.</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td>sizes</td>
+      <td>An optional prop that specifies an array of image sizes to include in the srcset attribute of the img element.</td>
+      <td>[100, 200, 400, 800]</td>
+    </tr>
+    <tr>
+      <td>alt</td>
+      <td>An optional prop that specifies the alternative text for the image.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>loading</td>
+      <td>A string indicating whether the image should be lazily loaded. Can be "lazy", "eager", null, or undefined.</td>
+      <td>lazy</td>
+    </tr>
+    <tr>
+      <td>decoding</td>
+      <td>A string indicating the decoding mode for the image. Can be "async", "auto", "sync", null, or undefined.</td>
+      <td>async</td>
+    </tr>
+  </tbody>
+</table>
+
 <h2>Bimgc to create all your images from one image</h2>
 
 <p>
@@ -97,7 +152,7 @@ cd path/to/your/project
 
 <style>
   main {
-    padding: 20px 20px 100px 20px;
+    padding: 0 40px 100px 40px;
   }
 
   p {
@@ -108,4 +163,29 @@ cd path/to/your/project
     background-color: #eee;
     padding: 10px;
   }
+
+  table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+  }
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+  th {
+    font-weight: bold;
+    background-color: #f2f2f2;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  tr:nth-child(odd) {
+    background-color: #fff;
+  }
+
 </style>
