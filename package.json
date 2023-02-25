@@ -1,15 +1,15 @@
 {
 	"name": "srit",
-	"version": "0.1.0",
-  "description": "Svelte responsive image tag",
-  "author": {
-    "name": "Shinichi Okada",
-    "email": "connect@codewithshin.com",
-    "url": "https://blog.codewithshin.com"
-  },
-  "bugs": "https://github.com/shinokada/srit/issues",
-  "homepage": "https://github.com/shinokada/srit/",
-  "license": "MIT",
+	"version": "0.1.1",
+	"description": "Svelte responsive image tag",
+	"author": {
+		"name": "Shinichi Okada",
+		"email": "connect@codewithshin.com",
+		"url": "https://blog.codewithshin.com"
+	},
+	"bugs": "https://github.com/shinokada/srit/issues",
+	"homepage": "https://github.com/shinokada/srit/",
+	"license": "MIT",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
@@ -23,7 +23,7 @@
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
 		"format": "prettier --plugin-search-dir . --write .",
 		"write-package-json": "node ./scripts/package-json-writer.js",
-    "package:publish": "standard-version && git push --follow-tags origin main && npm run package && npm run write-package-json && npm publish"
+		"package:publish": "standard-version && git push --follow-tags origin main && npm run package && npm run write-package-json && npm publish"
 	},
 	"exports": {
 		".": {
@@ -63,14 +63,14 @@
 	"types": "./dist/index.d.ts",
 	"type": "module",
 	"keywords": [
-    "svelte",
-    "sveltekit",
-    "image",
-    "responsive",
+		"svelte",
+		"sveltekit",
+		"image",
+		"responsive",
 		"image tag"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/shinokada/srit"
-  }
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/shinokada/srit"
+	}
 }
