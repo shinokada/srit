@@ -15,7 +15,7 @@ To use the Srit component, import it in your Svelte file and pass the required a
 
 ```html
 <script lang="ts">
-  import Srit from 'srit';
+  import { Srit } from 'srit';
 
   const imageSrc = 'images/test-image.jpg';
   const imageSizes = [100, 200, 400, 800];
