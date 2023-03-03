@@ -27,9 +27,6 @@
 const avifSrcSet = createImageSrcSet(src, sizes, 'avif');
 const webpSrcSet = createImageSrcSet(src, sizes, 'webp');
 const srcset = createImageSrcSet(src, sizes );
-console.log(avifSrcSet)
-console.log(webpSrcSet)
-console.log(srcset)
 
 async function getAspectRatioFromSrc(src: string): Promise<number> {
   if (!BROWSER) {
