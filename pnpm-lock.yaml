@@ -11,6 +11,7 @@ specifiers:
   eslint: ^8.28.0
   eslint-config-prettier: ^8.5.0
   eslint-plugin-svelte3: ^4.0.0
+  esm-env: ^1.0.0
   prettier: ^2.8.0
   prettier-plugin-svelte: ^2.8.1
   publint: ^0.1.9
@@ -33,6 +34,7 @@ devDependencies:
   eslint: 8.34.0
   eslint-config-prettier: 8.6.0_eslint@8.34.0
   eslint-plugin-svelte3: 4.0.0_dbthnr4b2bdkhyiebwn7su3hnq
+  esm-env: 1.0.0
   prettier: 2.8.4
   prettier-plugin-svelte: 2.9.0_jrsxveqmsx2uadbqiuq74wlc4u
   publint: 0.1.9

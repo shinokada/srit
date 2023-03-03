@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { BROWSER } from 'esm-env'
   export let src: string;
   export let avif: boolean = true
   export let webp: boolean = true
@@ -31,6 +32,9 @@ console.log(webpSrcSet)
 console.log(srcset)
 
 async function getAspectRatioFromSrc(src: string): Promise<number> {
+  if (!BROWSER) {
+    return Promise.resolve(1);
+  }
   return new Promise((resolve, reject) => {
     const img = new Image();
     img.onload = () => {
