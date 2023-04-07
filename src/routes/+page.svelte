@@ -1,14 +1,14 @@
 <script>
   import { Srit } from "$lib";
-  const imageSrc = 'images/test-image-2.jpg';
-  const imageSizes = [100, 200, 400, 800];
-  const imageAlt = 'Test Image';
+  const src = 'images/test-image-2.jpg';
+  const sizes = [100, 200, 400, 800];
+  const alt = 'Test Image';
 </script>
 
 <main>
 <h1>Srit: Svelte Responsive Image Tags</h1>
 
-<Srit src={imageSrc} sizes={imageSizes} alt={imageAlt} />
+<Srit {src} {sizes} {alt} />
 
 <h2>Introduction</h2>
 
