@@ -23,7 +23,6 @@
 
 <pre><code>&lt;script lang=&quot;ts&quot;&gt;
   import Srit from 'srit';
-
   const imageSrc = 'images/test-image.jpg';
   const imageSizes = [100, 200, 400, 800];
   const imageAlt = 'Test Image';
@@ -170,6 +169,11 @@ bimgc --help
     word-wrap: break-word;
   }
 
+  pre code {
+    font-size: 16px;
+  }
+
+
   table {
   border-collapse: collapse;
   width: 100%;
@@ -179,6 +183,7 @@ bimgc --help
   th, td {
     border: 1px solid #ddd;
     padding: 8px;
+    font-size: 18px;
   }
 
   th {
