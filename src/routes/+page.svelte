@@ -4,8 +4,9 @@
   const imageSizes = [100, 200, 400, 800];
   const imageAlt = 'Test Image';
 </script>
+
 <main>
-<h1>Srit: Svelte Responsive Image Tag</h1>
+<h1>Srit: Svelte Responsive Image Tags</h1>
 
 <Srit src={imageSrc} sizes={imageSizes} alt={imageAlt} />
 
@@ -151,7 +152,11 @@ bimgc --help
 
 <style>
   main {
-    padding: 0 40px 100px 40px;
+    padding: 0 10px 50px 10px;
+  }
+
+  h1 {
+    text-align: center;
   }
 
   p {
@@ -161,6 +166,8 @@ bimgc --help
   pre{
     background-color: #eee;
     padding: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
   }
 
   table {
