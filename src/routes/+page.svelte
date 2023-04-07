@@ -18,6 +18,10 @@
 
 <pre><code>pnpm i -D srit</code></pre>
 
+<h2>GitHub repo</h2>
+
+<a href='https://github.com/shinokada/srit' target='_blank' rel='noreferrer'>Srit</a>
+
 <h2>Usage</h2>
 <p>The above image is created by the following in a Svelte file:</p>
 
