@@ -1,6 +1,6 @@
 {
 	"name": "srit",
-	"version": "0.1.4",
+	"version": "0.1.5",
 	"description": "Svelte responsive image tag",
 	"author": {
 		"name": "Shinichi Okada",

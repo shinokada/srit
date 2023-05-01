@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.5](https://github.com/shinokada/srit/compare/v0.1.4...v0.1.5) (2023-05-01)
+
+
+### Bug Fixes
+
+* add github repo link ([f4a2e98](https://github.com/shinokada/srit/commit/f4a2e985dfa6d739dbec82e21bc420405cb51a57))
+* add meta tag ([cf98feb](https://github.com/shinokada/srit/commit/cf98febef0547e55e696247244e13679c19682d5))
+* add meta tags ([6913269](https://github.com/shinokada/srit/commit/69132691089cf63133a228b5087cdea30b0b1c59))
+* css ([7e12627](https://github.com/shinokada/srit/commit/7e12627c3e8c133f123f9631e6aebeb8d647f2c9))
+* move loading before src ([4699c07](https://github.com/shinokada/srit/commit/4699c076d6b3896eac21d4be989cdddd6c420f7b))
+* styles ([a395dfe](https://github.com/shinokada/srit/commit/a395dfec4f6fcb12cb7bfacf76e93c5f63eee920))
+* update fb:app_id ([d1acadb](https://github.com/shinokada/srit/commit/d1acadb7db07319fbc0961a5b9aa3e25f525bfcf))
+
 ### [0.1.4](https://github.com/shinokada/srit/compare/v0.1.3...v0.1.4) (2023-03-03)
 
 
