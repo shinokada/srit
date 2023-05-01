@@ -68,11 +68,11 @@ getAspectRatioFromSrc(src)
   >
   {/if}
   <img
+    {loading}
     {src}
     {srcset}
     sizes="(max-width: {maxWidth}px) 100vw, 50vw"
     style="{imgStyle}"
-    {loading}
     {decoding}
     {alt}
   />
