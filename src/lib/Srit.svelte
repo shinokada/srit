@@ -77,3 +77,38 @@ getAspectRatioFromSrc(src)
     {alt}
   />
 </picture>
+
+
+<!--
+  @component
+  # Svelte Responsive Image Tag (SRIT)
+  [Go to Srit](https://srit.vercel.app/)
+  &nbsp;
+  ## Props
+  &nbsp;
+  @prop src: string;
+  @prop avif: boolean = true
+  @prop webp: boolean = true
+  @prop sizes = [100, 200, 400, 800]
+  @prop alt = ''
+  @prop loading: "lazy" | "eager" | null | undefined = 'lazy'
+  @prop decoding : "async" | "auto" | "sync" | null | undefined = 'async'  
+  &nbsp;
+  ## Example
+  &nbsp;
+  ```
+  <script lang="ts">
+    import Srit from 'srit';
+    const imageSrc = 'images/test-image.jpg';
+    const imageSizes = [100, 200, 400, 800];
+    const imageAlt = 'Test Image';
+  </script>
+
+  <Srit src={imageSrc} sizes={imageSizes} alt={imageAlt} />
+  ```
+  &nbsp;&nbsp;
+  ## Bimgc to create all your images from one image
+  &nbsp;
+  Convert your image to all AVIF and WEBP images by using [bimgc](https://bimgc.codewithshin.com/?id=package-usage).
+  
+-->
