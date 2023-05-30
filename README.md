@@ -63,7 +63,7 @@ The following props are available for the Srit component:
 
 If you are using an LSP-compatible editor, such as VSCode, Atom, Sublime Text, or Neovim, hovering over a component name will display a documentation link, features, props, events, and an example.
 
-[[/images/compo-doc.png]]
+![component doc](https://github.com/shinokada/srit/blob/main/static/images/compo-doc.png?raw=true)
 
 ## How to generate all images
 
