@@ -59,6 +59,12 @@ The following props are available for the Srit component:
 |loading| A string indicating whether the image should be lazily loaded. Can be "lazy", "eager", null, or undefined. |lazy|
 |decoding| A string indicating the decoding mode for the image. Can be "async", "auto", "sync", null, or undefined. |async|
 
+## Component document
+
+If you are using an LSP-compatible editor, such as VSCode, Atom, Sublime Text, or Neovim, hovering over a component name will display a documentation link, features, props, events, and an example.
+
+[[/images/compo-doc.png]]
+
 ## How to generate all images
 
 Use [bimgc](https://bimgc.codewithshin.com/). `bimgc` converts PNG and JPG images to AVIF and WebP format with various sizes and saves them in a specified output directory. The output images are named based on the input file and include information about their size and format.
