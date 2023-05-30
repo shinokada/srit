@@ -119,7 +119,7 @@
 
 <p>If you are using an LSP-compatible editor, such as VSCode, Atom, Sublime Text, or Neovim, hovering over a component name will display a documentation link, features, props, events, and an example.</p>
 
-<img src="https://github.com/shinokada/srit/blob/main/static/images/compo-doc.png?raw=true" alt="component doc example" />
+<img width="345" height="192" src="https://github.com/shinokada/srit/blob/main/static/images/compo-doc.png?raw=true" alt="component doc example" />
 
 
 <h2>Bimgc to create all your images from one image</h2>
