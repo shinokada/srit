@@ -1,2 +1,2 @@
 // Reexport your entry components here
-export { default as Srit } from './Srit.svelte'
+export { default as Srit } from './Srit.svelte';
