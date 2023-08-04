@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.1](https://github.com/shinokada/srit/compare/v0.1.8...v0.2.1) (2023-08-04)
+
+
+### Features
+
+* svelte 4 ([6ec616c](https://github.com/shinokada/srit/commit/6ec616c015692b99e64578838b7fb2d9a39fa23c))
+
 ### [0.1.8](https://github.com/shinokada/srit/compare/v0.1.7...v0.1.8) (2023-06-15)
 
 ### [0.1.7](https://github.com/shinokada/srit/compare/v0.1.6...v0.1.7) (2023-05-30)
