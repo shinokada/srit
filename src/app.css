@@ -1,0 +1,54 @@
+@import 'tailwindcss';
+
+main {
+	@apply min-h-screen bg-gray-50 p-8;
+}
+
+h1 {
+	@apply mb-4 text-center text-3xl font-bold;
+}
+
+h2 {
+	@apply mb-3 text-2xl font-semibold;
+}
+
+p {
+	font-size: 20px;
+}
+
+pre {
+	background-color: #eee;
+	padding: 10px;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+pre code {
+	font-size: 16px;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+th,
+td {
+	border: 1px solid #ddd;
+	padding: 8px;
+	font-size: 18px;
+}
+
+th {
+	font-weight: bold;
+	background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+	background-color: #fff;
+}

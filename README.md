@@ -16,11 +16,11 @@ To use the Srit component, import it in your Svelte file and pass the required a
 
 ```html
 <script lang="ts">
-  import { Srit } from 'srit';
+	import { Srit } from 'srit';
 
-  const imageSrc = 'images/test-image.jpg';
-  const imageSizes = [100, 200, 400, 800];
-  const imageAlt = 'Test Image';
+	const imageSrc = 'images/test-image.jpg';
+	const imageSizes = [100, 200, 400, 800];
+	const imageAlt = 'Test Image';
 </script>
 
 <Srit src="{imageSrc}" sizes="{imageSizes}" alt="{imageAlt}" />
@@ -30,37 +30,37 @@ The above code creates the following output:
 
 ```html
 <picture>
-  <source
-    type="image/avif"
-    srcset="
-      images/test-image-2-100.avif?width=100 100w,
-      images/test-image-2-200.avif?width=200 200w,
-      images/test-image-2-400.avif?width=400 400w,
-      images/test-image-2-800.avif?width=800 800w
-    "
-  />
-  <source
-    type="image/webp"
-    srcset="
-      images/test-image-2-100.webp?width=100 100w,
-      images/test-image-2-200.webp?width=200 200w,
-      images/test-image-2-400.webp?width=400 400w,
-      images/test-image-2-800.webp?width=800 800w
-    "
-  />
-  <img
-    src="images/test-image-2.jpg"
-    srcset="
-      images/test-image-2-100.jpg?width=100 100w,
-      images/test-image-2-200.jpg?width=200 200w,
-      images/test-image-2-400.jpg?width=400 400w,
-      images/test-image-2-800.jpg?width=800 800w
-    "
-    sizes="(max-width: 800px) 100vw, 50vw"
-    loading="lazy"
-    decoding="async"
-    alt="Test Image"
-  />
+	<source
+		type="image/avif"
+		srcset="
+			images/test-image-2-100.avif?width=100 100w,
+			images/test-image-2-200.avif?width=200 200w,
+			images/test-image-2-400.avif?width=400 400w,
+			images/test-image-2-800.avif?width=800 800w
+		"
+	/>
+	<source
+		type="image/webp"
+		srcset="
+			images/test-image-2-100.webp?width=100 100w,
+			images/test-image-2-200.webp?width=200 200w,
+			images/test-image-2-400.webp?width=400 400w,
+			images/test-image-2-800.webp?width=800 800w
+		"
+	/>
+	<img
+		src="images/test-image-2.jpg"
+		srcset="
+			images/test-image-2-100.jpg?width=100 100w,
+			images/test-image-2-200.jpg?width=200 200w,
+			images/test-image-2-400.jpg?width=400 400w,
+			images/test-image-2-800.jpg?width=800 800w
+		"
+		sizes="(max-width: 800px) 100vw, 50vw"
+		loading="lazy"
+		decoding="async"
+		alt="Test Image"
+	/>
 </picture>
 ```
 
