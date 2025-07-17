@@ -13,9 +13,7 @@
 	<h2>Introduction</h2>
 
 	<p>
-		Svelte Responsive Image Tag (SRIT) is a Svelte component that simplifies the creation of
-		responsive images by automatically selecting the appropriate format based on the browser's
-		capabilities. The component uses the "picture" element to provide multiple image sources in
+		Svelte Responsive Image Tag (SRIT) is a Svelte component that simplifies the creation of responsive images by automatically generating multiple image sources and selecting the optimal format (such as AVIF or WebP) based on the browser's capabilities. The component uses the "picture" element to provide multiple image sources in
 		different formats and the "img" element with the "srcset" and "sizes" attributes to choose the
 		optimal source based on the device's screen size and resolution.
 	</p>
